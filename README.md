@@ -30,7 +30,7 @@ responder una única pregunta de negocio: **dónde asignar el capital de inversi
 
 | Entregable | Ruta |
 |---|---|
-| **Cuaderno de análisis** (92 celdas, ejecutado) | [`notebooks/Challenge_02_Geo_Temporal_Redes.ipynb`](notebooks/Challenge_02_Geo_Temporal_Redes.ipynb) |
+| **Cuaderno de análisis** (110 celdas, ejecutado) | [`notebooks/Challenge_02_Geo_Temporal_Redes.ipynb`](notebooks/Challenge_02_Geo_Temporal_Redes.ipynb) |
 | **Informe técnico ejecutivo** (22 páginas) | [`reports/Informe_Tecnico_Challenge02.pdf`](reports/Informe_Tecnico_Challenge02.pdf) |
 | **Mapas y grafo interactivos** | [`outputs/*.html`](outputs/) |
 
@@ -44,7 +44,7 @@ responder una única pregunta de negocio: **dónde asignar el capital de inversi
 │   ├── agro_clean.csv        agro_noise.csv
 │   └── ener_clean.csv        ener_noise.csv
 ├── docs/                     Enunciado, checklist y diccionario del taller (PDF)
-│   └── design/             Documento de diseño con supuestos y decisiones
+│   └── design/               Documento de diseño con supuestos y decisiones
 ├── notebooks/                Cuaderno de análisis — única fuente de verdad
 ├── figures/                  14 figuras PNG a 150 dpi generadas por el cuaderno
 ├── outputs/                  results.json, mapas Plotly (.html) y tablas de apoyo

@@ -72,6 +72,20 @@ except FileNotFoundError:
     raise SystemExit(1)
 
 
+def contar_celdas() -> tuple[int, int, int]:
+    """Lee el recuento real de celdas del cuaderno, para que no se desactualice."""
+    try:
+        nb = json.loads((ROOT / "notebooks" /
+                         "Challenge_02_Geo_Temporal_Redes.ipynb").read_text(encoding="utf-8"))
+        tipos = [c["cell_type"] for c in nb["cells"]]
+        return len(tipos), tipos.count("markdown"), tipos.count("code")
+    except Exception:
+        return 0, 0, 0
+
+
+N_CELDAS, N_MD, N_CODE = contar_celdas()
+
+
 def V(clave: str, fmt: str = "{}", defecto: str = "n/d") -> str:
     """Formatea una cifra del análisis. Falla visiblemente si la clave no existe."""
     if clave not in R:
@@ -910,7 +924,7 @@ P("Todo el análisis reside en un repositorio Git con la siguiente estructura. E
   "consume.")
 tabla(["Componente", "Ruta", "Contenido"],
       [["Cuaderno de análisis", "<code>notebooks/</code>",
-        "92 celdas (44 markdown, 48 de código) ejecutadas de extremo a extremo"],
+        f"{N_CELDAS} celdas ({N_MD} markdown, {N_CODE} de código) ejecutadas de extremo a extremo"],
        ["Datos originales", "<code>data/</code>", "Los cuatro CSV sin modificar"],
        ["Figuras", "<code>figures/</code>",
         f"{len(list(FIGS.glob('*.png')))} PNG a 150 dpi"],
