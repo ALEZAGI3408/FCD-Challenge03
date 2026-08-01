@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Ejecuta el notebook del Challenge 02 de extremo a extremo.
+"""Ejecuta el notebook del Challenge 03 de extremo a extremo.
 
 Regenera figures/, outputs/*.html y outputs/results.json a partir de los datos crudos.
 El notebook es la única fuente de verdad del análisis; este script sólo lo orquesta.
@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-NOTEBOOK = ROOT / "notebooks" / "Challenge_02_Geo_Temporal_Redes.ipynb"
+NOTEBOOK = ROOT / "notebooks" / "Challenge_03_Geo_Temporal_Redes.ipynb"
 
 
 def main() -> int:

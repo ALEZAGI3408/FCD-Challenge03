@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Genera el Informe Técnico (PDF) del Challenge 02 con ReportLab.
+"""Genera el Informe Técnico (PDF) del Challenge 03 con ReportLab.
 
 Consume EXCLUSIVAMENTE outputs/results.json y las figuras de figures/, ambos producidos
 por el notebook. No recalcula nada: así el informe no puede contradecir al análisis.
@@ -28,7 +28,7 @@ FIGS = ROOT / "figures"
 OUT = ROOT / "outputs"
 REPORTS = ROOT / "reports"
 REPORTS.mkdir(exist_ok=True)
-DEST = REPORTS / "Informe_Tecnico_Challenge02.pdf"
+DEST = REPORTS / "Informe_Tecnico_Challenge03.pdf"
 
 _MESES = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
           "septiembre", "octubre", "noviembre", "diciembre")
@@ -76,7 +76,7 @@ def contar_celdas() -> tuple[int, int, int]:
     """Lee el recuento real de celdas del cuaderno, para que no se desactualice."""
     try:
         nb = json.loads((ROOT / "notebooks" /
-                         "Challenge_02_Geo_Temporal_Redes.ipynb").read_text(encoding="utf-8"))
+                         "Challenge_03_Geo_Temporal_Redes.ipynb").read_text(encoding="utf-8"))
         tipos = [c["cell_type"] for c in nb["cells"]]
         return len(tipos), tipos.count("markdown"), tipos.count("code")
     except Exception:
@@ -199,7 +199,7 @@ def pie_pagina(canvas, doc):
     canvas.setFont(FUENTE, 7.4)
     canvas.setFillColor(GRIS)
     canvas.drawString(2.2 * cm, 1.12 * cm,
-                      "Challenge 02 · Inteligencia Geo-Temporal y de Redes · TechLogistics S.A.")
+                      "Challenge 03 · Inteligencia Geo-Temporal y de Redes · TechLogistics S.A.")
     canvas.drawRightString(A4[0] - 2.2 * cm, 1.12 * cm, f"Página {doc.page - 1}")
     canvas.setStrokeColor(AZUL)
     canvas.setLineWidth(2.4)
@@ -222,8 +222,8 @@ def portada_limpia(canvas, doc):
 doc = BaseDocTemplate(str(DEST), pagesize=A4,
                       leftMargin=2.2 * cm, rightMargin=2.2 * cm,
                       topMargin=2.3 * cm, bottomMargin=2.0 * cm,
-                      title="Informe Técnico — Challenge 02: Inteligencia Geo-Temporal y de Redes",
-                      author="Maestría en Ciencia de los Datos — EAFIT",
+                      title="Informe Técnico — Challenge 03: Inteligencia Geo-Temporal y de Redes",
+                      author="Samuel Alarcón, Juan Alberto Rodríguez y Alejandro Zapata Giraldo — EAFIT",
                       subject="Optimización de Activos Críticos: TechLogistics S.A.")
 marco = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height, id="cuerpo")
 doc.addPageTemplates([
@@ -239,7 +239,7 @@ story.append(Paragraph("Inteligencia Geo-Temporal y de Redes", S["subtitulo"]))
 SP(6)
 story.append(Paragraph(
     "<b>Optimización de Activos Críticos: TechLogistics S.A.</b><br/>"
-    "Challenge 02 · Analítica Multidimensional", S["portada"]))
+    "Challenge 03 · Analítica Multidimensional", S["portada"]))
 SP(26)
 
 resumen_portada = Table([[Paragraph(
@@ -265,8 +265,9 @@ resumen_portada.setStyle(TableStyle([
 story.append(resumen_portada)
 SP(40)
 story.append(Paragraph(
-    "<b>Curso:</b> Análisis de Datos Avanzado — Series de Tiempo<br/>"
+    "<b>Curso:</b> Fundamentos en Ciencia de Datos<br/>"
     "<b>Docente:</b> Jorge Iván Padilla-Buriticá<br/>"
+    "<b>Autores:</b> Samuel Alarcón · Juan Alberto Rodríguez · Alejandro Zapata Giraldo<br/>"
     "<b>Programa:</b> Maestría en Ciencia de los Datos<br/>"
     "<b>Universidad EAFIT</b> · Periodo 2026-1<br/>"
     "<b>Metodología:</b> CRISP-DM / Análisis Multicapa", S["portada"]))

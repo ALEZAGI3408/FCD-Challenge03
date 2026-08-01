@@ -29,8 +29,8 @@ responder una única pregunta de negocio: **dónde asignar el capital de inversi
 
 | Entregable | Ruta |
 |---|---|
-| **Cuaderno de análisis** (110 celdas, ejecutado) | [`notebooks/Challenge_02_Geo_Temporal_Redes.ipynb`](notebooks/Challenge_02_Geo_Temporal_Redes.ipynb) |
-| **Informe técnico ejecutivo** (22 páginas) | [`reports/Informe_Tecnico_Challenge02.pdf`](reports/Informe_Tecnico_Challenge02.pdf) |
+| **Cuaderno de análisis** (110 celdas, ejecutado) | [`notebooks/Challenge_03_Geo_Temporal_Redes.ipynb`](notebooks/Challenge_03_Geo_Temporal_Redes.ipynb) |
+| **Informe técnico ejecutivo** (22 páginas) | [`reports/Informe_Tecnico_Challenge03.pdf`](reports/Informe_Tecnico_Challenge03.pdf) |
 | **Mapas y grafo interactivos** | 🌐 **[Abrir en GitHub Pages](https://alezagi3408.github.io/FCD-Challenge03/)** · fuente en [`outputs/*.html`](outputs/) |
 
 > Los `.html` de Plotly no se renderizan dentro de GitHub: usa el enlace de **GitHub Pages**

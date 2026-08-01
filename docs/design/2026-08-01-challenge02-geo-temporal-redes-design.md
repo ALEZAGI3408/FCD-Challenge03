@@ -1,7 +1,8 @@
-# Diseño — Challenge 02: Inteligencia Geo-Temporal y de Redes
+# Diseño — Challenge 03: Inteligencia Geo-Temporal y de Redes
 
 **Fecha:** 2026-08-01
-**Curso:** Análisis de Datos Avanzado — Maestría en Ciencia de los Datos, EAFIT
+**Curso:** Fundamentos en Ciencia de Datos — Maestría en Ciencia de los Datos, EAFIT
+**Autores:** Samuel Alarcón · Juan Alberto Rodríguez · Alejandro Zapata Giraldo
 **Caso:** TechLogistics S.A. (ficticio)
 
 ## 1. Objetivo
@@ -22,14 +23,14 @@ Lecture_03_Challenge/
 ├── data/                     agro_{clean,noise}.csv, ener_{clean,noise}.csv
 ├── docs/                     PDFs originales del taller + este spec
 ├── notebooks/
-│   └── Challenge_02_Geo_Temporal_Redes.ipynb   ← fuente única de verdad
+│   └── Challenge_03_Geo_Temporal_Redes.ipynb   ← fuente única de verdad
 ├── figures/                  PNG generados por el notebook
 ├── outputs/                  mapas Plotly (.html), results.json, tablas .csv
 ├── scripts/
 │   ├── run_analysis.py       ejecuta el notebook headless (nbconvert)
 │   └── build_report.py       arma el PDF con ReportLab desde results.json + figures/
 └── reports/
-    └── Informe_Tecnico_Challenge02.pdf
+    └── Informe_Tecnico_Challenge03.pdf
 ```
 
 **Principio de diseño:** el notebook es la única fuente de verdad. Escribe todas las
