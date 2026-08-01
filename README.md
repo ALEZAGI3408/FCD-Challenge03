@@ -31,7 +31,10 @@ responder una única pregunta de negocio: **dónde asignar el capital de inversi
 |---|---|
 | **Cuaderno de análisis** (110 celdas, ejecutado) | [`notebooks/Challenge_02_Geo_Temporal_Redes.ipynb`](notebooks/Challenge_02_Geo_Temporal_Redes.ipynb) |
 | **Informe técnico ejecutivo** (22 páginas) | [`reports/Informe_Tecnico_Challenge02.pdf`](reports/Informe_Tecnico_Challenge02.pdf) |
-| **Mapas y grafo interactivos** | [`outputs/*.html`](outputs/) |
+| **Mapas y grafo interactivos** | 🌐 **[Abrir en GitHub Pages](https://alezagi3408.github.io/FCD-Challenge03/)** · fuente en [`outputs/*.html`](outputs/) |
+
+> Los `.html` de Plotly no se renderizan dentro de GitHub: usa el enlace de **GitHub Pages**
+> para explorarlos de forma interactiva (zoom, *hover* y filtros).
 
 ---
 
@@ -51,6 +54,7 @@ responder una única pregunta de negocio: **dónde asignar el capital de inversi
 │   ├── run_analysis.py       Ejecuta el cuaderno de extremo a extremo
 │   └── build_report.py       Construye el PDF a partir de results.json
 ├── reports/                  Informe técnico
+├── index.html                Portada de GitHub Pages hacia las visualizaciones
 └── requirements.txt
 ```
 
