@@ -1,9 +1,8 @@
-# Challenge 02 — Inteligencia Geo-Temporal y de Redes
+# Challenge 03 — Inteligencia Geo-Temporal y de Redes
 
 **Optimización de Activos Críticos: TechLogistics S.A.**
 
-Maestría en Ciencia de los Datos · Universidad EAFIT · Periodo 2026-1
-Curso: Análisis de Datos Avanzado — Series de Tiempo · Docente: Jorge Iván Padilla-Buriticá
+Challenge 03 · Curso: Fundamentos en Ciencia de Datos — Universidad EAFIT, Docente: Jorge Iván Padilla Buriticá, Autores: Samuel Alarcón, Juan Alberto Rodríguez y Alejandro Zapata Giraldo
 
 ---
 
