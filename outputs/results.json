@@ -1,0 +1,620 @@
+{
+  "n_obs": 2000,
+  "pareo_clean_noise_valido": true,
+  "snr_min": 5.004506327971081,
+  "snr_max": 11.89877579629867,
+  "snr_peor_variable": "Agro_7",
+  "snr_en_rango_5_12": true,
+  "snr_tabla_agro": {
+    "Agro_1": 11.6,
+    "Agro_2": 6.2,
+    "Agro_3": 10.78,
+    "Agro_4": 8.0,
+    "Agro_5": 7.83,
+    "Agro_6": 8.49,
+    "Agro_7": 5.0,
+    "Agro_8": 8.75,
+    "Agro_9": 9.23,
+    "Agro_10": 9.93,
+    "Latitude": 15.17,
+    "Longitude": NaN
+  },
+  "snr_tabla_ener": {
+    "Ener_1": 7.82,
+    "Ener_2": 10.65,
+    "Ener_3": 7.59,
+    "Ener_4": 8.53,
+    "Ener_5": 11.9,
+    "Ener_6": 9.99,
+    "Ener_7": 9.06,
+    "Ener_8": 11.88,
+    "Ener_9": 10.91,
+    "Ener_10": 6.15,
+    "Latitude": 31.41,
+    "Longitude": NaN
+  },
+  "jitter_lon_es_cero": true,
+  "jitter_agro_sigma_m": 1132.5464550947063,
+  "jitter_ener_sigma_m": 5554.612046150471,
+  "jitter_ener_max_m": 17758.6735792674,
+  "ruido_shapiro_p": 0.6969186643964889,
+  "area_lat_km": 22.26072392175057,
+  "area_lon_km": 22.095770308653798,
+  "ndvi_r2_tendencia_temporal": 0.7642347391944686,
+  "t1_anova_p": 0.19293922219433304,
+  "t1_anova_detrended_p": 0.3936409813651881,
+  "t1_eta2_pct": 0.28340520404197816,
+  "t1_ttest_lat_p": 0.7716031849236025,
+  "t1_ttest_lon_p": 0.755646002177916,
+  "t1_zona_peor_ndvi": 1.1367976377029438,
+  "t1_zona_mejor_ndvi": 1.1919348510280228,
+  "t1_hay_cluster_espacial": false,
+  "t2_no_estacionarias": [
+    "Ener_1",
+    "Ener_2",
+    "Ener_3",
+    "Ener_5",
+    "Ener_6",
+    "Ener_7"
+  ],
+  "t2_estacionarias": [
+    "Ener_4",
+    "Ener_8",
+    "Ener_9",
+    "Ener_10"
+  ],
+  "t2_adf_tabla": {
+    "Ener_1": {
+      "ADF stat": -1.8669,
+      "ADF p": 0.3478,
+      "KPSS p": 0.0842,
+      "orden": "I(1)"
+    },
+    "Ener_2": {
+      "ADF stat": -1.4791,
+      "ADF p": 0.5438,
+      "KPSS p": 0.09,
+      "orden": "I(1)"
+    },
+    "Ener_3": {
+      "ADF stat": -1.9284,
+      "ADF p": 0.3188,
+      "KPSS p": 0.0886,
+      "orden": "I(1)"
+    },
+    "Ener_4": {
+      "ADF stat": -13258888046.1121,
+      "ADF p": 0.0,
+      "KPSS p": 0.1,
+      "orden": "I(0)"
+    },
+    "Ener_5": {
+      "ADF stat": -0.3477,
+      "ADF p": 0.9185,
+      "KPSS p": 0.01,
+      "orden": "I(1)"
+    },
+    "Ener_6": {
+      "ADF stat": 0.9527,
+      "ADF p": 0.9937,
+      "KPSS p": 0.01,
+      "orden": "I(1)"
+    },
+    "Ener_7": {
+      "ADF stat": -0.4244,
+      "ADF p": 0.9059,
+      "KPSS p": 0.01,
+      "orden": "I(1)"
+    },
+    "Ener_8": {
+      "ADF stat": -46.0363,
+      "ADF p": 0.0,
+      "KPSS p": 0.1,
+      "orden": "I(0)"
+    },
+    "Ener_9": {
+      "ADF stat": -45.3582,
+      "ADF p": 0.0,
+      "KPSS p": 0.1,
+      "orden": "I(0)"
+    },
+    "Ener_10": {
+      "ADF stat": -43.7151,
+      "ADF p": 0.0,
+      "KPSS p": 0.1,
+      "orden": "I(0)"
+    }
+  },
+  "ener4_ar2_r2": 0.9999999921338412,
+  "ener4_ratio_resid": 8.873570782992694e-05,
+  "ener5_adf_c_p": 0.9184704540337372,
+  "ener5_adf_ct_p": 0.3997386177083568,
+  "ener5_drift_mu": 0.01056022672227743,
+  "ener5_drift_t": 4.66392700565668,
+  "ener5_drift_p": 3.3076879020419324e-06,
+  "ener5_deriva_acumulada": 21.10989321783258,
+  "ener5_cambio_total": 21.10989321783258,
+  "ener5_es_rw_con_drift": true,
+  "par_periodo_muestras": 125.57142857142857,
+  "dt_minutos_implicito": 11.467576791808874,
+  "ener4_f_dominante": 0.00390625,
+  "ener4_periodo_dominante": 256.0,
+  "ruido_psd_media": 55.20776474432128,
+  "ruido_psd_cv": 0.41211629901082114,
+  "ruido_psd_pendiente_p": 0.4025803628018798,
+  "ener4_f_cruce_snr0": 0.009765625,
+  "ener4_snr_global": 8.534146151048095,
+  "t3_bandas": {
+    "[0.00, 0.01)": {
+      "periodo (muestras)": "100–inf",
+      "% pot. CLEAN": 100.0,
+      "% pot. NOISE": 90.69,
+      "% pot. RUIDO": 1.76,
+      "SNR banda (dB)": 27.29
+    },
+    "[0.01, 0.05)": {
+      "periodo (muestras)": "20–100",
+      "% pot. CLEAN": 0.0,
+      "% pot. NOISE": 0.79,
+      "% pot. RUIDO": 8.3,
+      "SNR banda (dB)": -29.81
+    },
+    "[0.05, 0.10)": {
+      "periodo (muestras)": "10–20",
+      "% pot. CLEAN": 0.0,
+      "% pot. NOISE": 0.86,
+      "% pot. RUIDO": 9.07,
+      "SNR banda (dB)": -67.94
+    },
+    "[0.10, 0.25)": {
+      "periodo (muestras)": "4–10",
+      "% pot. CLEAN": 0.0,
+      "% pot. NOISE": 2.94,
+      "% pot. RUIDO": 31.02,
+      "SNR banda (dB)": -88.67
+    },
+    "[0.25, 0.50)": {
+      "periodo (muestras)": "2–4",
+      "% pot. CLEAN": 0.0,
+      "% pot. NOISE": 4.72,
+      "% pot. RUIDO": 49.82,
+      "SNR banda (dB)": -111.37
+    }
+  },
+  "t3_pot_clean_bajo_001": 99.99908065955117,
+  "t3_pot_ruido_sobre_001": 98.23964943494151,
+  "agro3_f_cruce_snr0": 0.005859375,
+  "agro3_rmse_ruidosa": 3.3414339016607078,
+  "agro3_orden": 2,
+  "agro3_fc": 0.0075,
+  "agro3_rmse_filtrada": 0.8020978323268756,
+  "agro3_mejora_pct": 75.99540030020557,
+  "agro3_corr_ruidosa": 0.9602385522591149,
+  "agro3_corr_filtrada": 0.9976277229867223,
+  "agro3_snr_antes": 10.77950911052913,
+  "agro3_snr_despues": 23.17364572438035,
+  "t4_comparacion_filtros": {
+    "Butterworth orden 2, fc=0.0075": {
+      "RMSE": 0.8021,
+      "mejora %": 75.9954
+    },
+    "Media móvil w=51": {
+      "RMSE": 0.8944,
+      "mejora %": 73.2344
+    },
+    "Media móvil w=75": {
+      "RMSE": 0.9112,
+      "mejora %": 72.7292
+    },
+    "Media móvil w=25": {
+      "RMSE": 1.0274,
+      "mejora %": 69.2516
+    },
+    "Media móvil w=15": {
+      "RMSE": 1.1848,
+      "mejora %": 64.5421
+    },
+    "Media móvil w=9": {
+      "RMSE": 1.3836,
+      "mejora %": 58.5929
+    },
+    "Media móvil w=5": {
+      "RMSE": 1.666,
+      "mejora %": 50.1414
+    },
+    "Sin filtrar (línea base)": {
+      "RMSE": 3.3414,
+      "mejora %": 0.0
+    }
+  },
+  "t4_mejor_media_movil": 0.8943536257877044,
+  "t4_pred": {
+    "Oráculo (clean)": {
+      "RMSE 1 paso vs clean": 0.8823,
+      "MAE 1 paso vs clean": 0.7138,
+      "mejora vs sin filtrar %": 51.4079
+    },
+    "Sin filtrar (noise)": {
+      "RMSE 1 paso vs clean": 1.8156,
+      "MAE 1 paso vs clean": 1.4785,
+      "mejora vs sin filtrar %": 0.0
+    },
+    "Filtrada (Butterworth)": {
+      "RMSE 1 paso vs clean": 0.8788,
+      "MAE 1 paso vs clean": 0.707,
+      "mejora vs sin filtrar %": 51.5998
+    }
+  },
+  "t4_pred_mejora_pct": 51.59978522103867,
+  "t4_pred_rmse_ruidosa": 1.8156442806207949,
+  "t4_pred_rmse_filtrada": 0.8787757314423918,
+  "t4_pred_rmse_oraculo": 0.8822590303929586,
+  "grafo_ener_nodos": 70,
+  "grafo_ener_aristas": 865,
+  "grafo_ener_densidad": 0.17908902691511386,
+  "grafo_ener_bipartito": true,
+  "grafo_ener_diametro": 3,
+  "grafo_agro_nodos": 29,
+  "grafo_agro_aristas": 210,
+  "grafo_agro_densidad": 0.25862068965517243,
+  "betw_dirigida_toda_cero": true,
+  "cen_top10": {
+    "119": {
+      "grado": 49,
+      "centralidad_grado": 0.7101,
+      "volumen_telemetria": 120,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0377
+    },
+    "103": {
+      "grado": 47,
+      "centralidad_grado": 0.6812,
+      "volumen_telemetria": 114,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0346
+    },
+    "105": {
+      "grado": 46,
+      "centralidad_grado": 0.6667,
+      "volumen_telemetria": 112,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0333
+    },
+    "112": {
+      "grado": 46,
+      "centralidad_grado": 0.6667,
+      "volumen_telemetria": 108,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0328
+    },
+    "110": {
+      "grado": 45,
+      "centralidad_grado": 0.6522,
+      "volumen_telemetria": 87,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0308
+    },
+    "114": {
+      "grado": 44,
+      "centralidad_grado": 0.6377,
+      "volumen_telemetria": 103,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0306
+    },
+    "101": {
+      "grado": 44,
+      "centralidad_grado": 0.6377,
+      "volumen_telemetria": 89,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0302
+    },
+    "115": {
+      "grado": 44,
+      "centralidad_grado": 0.6377,
+      "volumen_telemetria": 101,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0296
+    },
+    "104": {
+      "grado": 44,
+      "centralidad_grado": 0.6377,
+      "volumen_telemetria": 101,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0292
+    },
+    "118": {
+      "grado": 43,
+      "centralidad_grado": 0.6232,
+      "volumen_telemetria": 89,
+      "betweenness_dirigida": 0.0,
+      "betweenness_no_dirigida": 0.0291
+    }
+  },
+  "cuello_botella": 119,
+  "cuello_grado": 49,
+  "cuello_volumen": 120,
+  "cuello_betw": 0.03774036949149268,
+  "cuello_centralidad_grado": 0.7101449275362319,
+  "cuello_criterios_coinciden": true,
+  "nodo214_rank": 64,
+  "nodo214_total_nodos": 70,
+  "nodo214_volumen": 27,
+  "nodo214_in_degree": 16,
+  "nodo214_betw": 0.002254491476950263,
+  "n_puentes": 0,
+  "n_articulacion": 0,
+  "eficiencia_global": 0.6697722567287822,
+  "caida_eficiencia_cuello_pct": 0.8031033124223708,
+  "caida_eficiencia_214_pct": -0.2788132254446962,
+  "fallos_tabla": {
+    "119": {
+      "betweenness": 0.0377,
+      "eficiencia tras el fallo": 0.6644,
+      "caída de eficiencia %": 0.8031,
+      "componentes resultantes": 1,
+      "nodos aislados": 0
+    },
+    "103": {
+      "betweenness": 0.0346,
+      "eficiencia tras el fallo": 0.665,
+      "caída de eficiencia %": 0.7182,
+      "componentes resultantes": 1,
+      "nodos aislados": 0
+    },
+    "105": {
+      "betweenness": 0.0333,
+      "eficiencia tras el fallo": 0.6652,
+      "caída de eficiencia %": 0.6758,
+      "componentes resultantes": 1,
+      "nodos aislados": 0
+    },
+    "112": {
+      "betweenness": 0.0328,
+      "eficiencia tras el fallo": 0.6652,
+      "caída de eficiencia %": 0.6758,
+      "componentes resultantes": 1,
+      "nodos aislados": 0
+    },
+    "110": {
+      "betweenness": 0.0308,
+      "eficiencia tras el fallo": 0.6655,
+      "caída de eficiencia %": 0.6334,
+      "componentes resultantes": 1,
+      "nodos aislados": 0
+    },
+    "214": {
+      "betweenness": 0.0023,
+      "eficiencia tras el fallo": 0.6716,
+      "caída de eficiencia %": -0.2788,
+      "componentes resultantes": 1,
+      "nodos aislados": 0
+    }
+  },
+  "red_sin_punto_unico_fallo": true,
+  "topologia_jaccard_ener": 1.0,
+  "topologia_recuperable": true,
+  "umbral_ener2_p90": 178.33584282766085,
+  "premisa_chi2_p": 0.8972192143132578,
+  "premisa_214_verificada": false,
+  "nodos_que_desaparecen": [],
+  "granger_10_9_p": 0.019317976456537326,
+  "granger_10_9_lag": 4,
+  "granger_10_9_bonferroni": 0.1545438116522986,
+  "granger_9_10_p": 0.11246362227826837,
+  "granger_noise_p": 0.14198218078562347,
+  "granger_corr_contemporanea": 0.020739430879762637,
+  "granger_significativo_sin_correccion": true,
+  "granger_significativo_con_correccion": false,
+  "p2_geo_filtros": {
+    "Sin corregir": {
+      "RMSE (°)": 0.0102,
+      "RMSE (m)": 1132.5466
+    },
+    "Butterworth fc=0.02": {
+      "RMSE (°)": 0.0569,
+      "RMSE (m)": 6329.6866
+    },
+    "Mediana móvil w=15": {
+      "RMSE (°)": 0.0577,
+      "RMSE (m)": 6418.1979
+    }
+  },
+  "p2_jitter_irreducible": true,
+  "p2_levene_p": 0.3597055728142572,
+  "p2_var_viento_bajo": 2.1905142537085056,
+  "p2_var_viento_alto": 2.440336962513291,
+  "p2_corr_ndvi_viento": 0.014238042168811266,
+  "p2_ttest_lat_p": 0.7716031849236025,
+  "p2_ttest_lon_p": 0.755646002177916,
+  "p2_separacion_centroides_m": 275.9883947287617,
+  "p2_premisa_verificada": false,
+  "p2_corr_hidricas": {
+    "Humedad": {
+      "corr con NDVI (niveles)": -0.032,
+      "corr con NDVI (1ª dif.)": -0.01
+    },
+    "RH": {
+      "corr con NDVI (niveles)": -0.0335,
+      "corr con NDVI (1ª dif.)": 0.014
+    },
+    "Viento": {
+      "corr con NDVI (niveles)": -0.0011,
+      "corr con NDVI (1ª dif.)": 0.0137
+    }
+  },
+  "p2_var_temporal_pct": 76.42347391944686,
+  "p3_btw_varianza": 1.4045965675664618e-05,
+  "p3_btw_cv": 0.12835262595681884,
+  "p3_tabla": {
+    "M0 — ARIMA(2,1,1) sin exógenas": {
+      "AIC": 8755.967,
+      "BIC": 8778.368,
+      "log-verosimilitud": -4373.983,
+      "nobs": 2000,
+      "k": 4,
+      "p(Ener_3)": NaN,
+      "p(btw_src)": NaN,
+      "p(deg_src)": NaN,
+      "Δ AIC vs M1": 7.792
+    },
+    "M1 — + Temperatura": {
+      "AIC": 8748.175,
+      "BIC": 8776.177,
+      "log-verosimilitud": -4369.087,
+      "nobs": 2000,
+      "k": 5,
+      "p(Ener_3)": 0.001,
+      "p(btw_src)": NaN,
+      "p(deg_src)": NaN,
+      "Δ AIC vs M1": 0.0
+    },
+    "M2 — + Temperatura + Betweenness": {
+      "AIC": 8749.674,
+      "BIC": 8783.276,
+      "log-verosimilitud": -4368.837,
+      "nobs": 2000,
+      "k": 6,
+      "p(Ener_3)": 0.001,
+      "p(btw_src)": 0.027,
+      "p(deg_src)": NaN,
+      "Δ AIC vs M1": 1.499
+    },
+    "M3 — + Temperatura + Cent. de grado": {
+      "AIC": 8748.14,
+      "BIC": 8781.742,
+      "log-verosimilitud": -4368.07,
+      "nobs": 2000,
+      "k": 6,
+      "p(Ener_3)": 0.001,
+      "p(btw_src)": NaN,
+      "p(deg_src)": 0.157,
+      "Δ AIC vs M1": -0.035
+    },
+    "M4 — + Temp + Betweenness + Grado": {
+      "AIC": 8748.16,
+      "BIC": 8787.362,
+      "log-verosimilitud": -4367.08,
+      "nobs": 2000,
+      "k": 7,
+      "p(Ener_3)": 0.001,
+      "p(btw_src)": 0.07,
+      "p(deg_src)": 0.046,
+      "Δ AIC vs M1": -0.015
+    }
+  },
+  "p3_aic_M0": 8755.966505117187,
+  "p3_aic_M1": 8748.174735030178,
+  "p3_aic_M2": 8749.673877720139,
+  "p3_delta_aic_temp": 7.791770087009354,
+  "p3_delta_aic_btw": 1.4991426899614453,
+  "p3_lr_stat": 0.5008573100385547,
+  "p3_lr_p": 0.47912366963575226,
+  "p3_wald_p": 0.026629183155649952,
+  "p3_centralidad_mejora_aic": false,
+  "p3_mejor_modelo": "M3 — + Temperatura + Cent. de grado",
+  "p3_coef_temp": 0.290898585837691,
+  "p3_p_temp": 0.0011064099409756882,
+  "p3_ljungbox_p10": 0.3084044313570379,
+  "v1_espuria": {
+    "Ener_1 (Demanda) ~ Ener_3 (Temperatura)": {
+      "r en NIVELES": 0.9815,
+      "r en DIFERENCIAS": 0.0291,
+      "caída absoluta": 0.9524
+    },
+    "Ener_1 (Demanda) ~ Ener_2 (Precio Spot)": {
+      "r en NIVELES": 0.964,
+      "r en DIFERENCIAS": -0.0339,
+      "caída absoluta": 0.9301
+    },
+    "Ener_5 (Costo Gas) ~ Ener_6 (Emisiones CO2)": {
+      "r en NIVELES": -0.9872,
+      "r en DIFERENCIAS": 0.0182,
+      "caída absoluta": 0.969
+    },
+    "Agro_5 (NDVI) ~ Agro_7 (Biomasa)": {
+      "r en NIVELES": 0.9143,
+      "r en DIFERENCIAS": 0.0263,
+      "caída absoluta": 0.888
+    }
+  },
+  "v1_rw_r_medio": 0.4181855292948161,
+  "v1_rw_pct_mayor_05": 41.0,
+  "v1_rw_pct_mayor_08": 6.2,
+  "v1_corr_demanda_temp_niveles": 0.9814900552105245,
+  "v1_corr_demanda_temp_dif": 0.029115922237218733,
+  "v2_arma_agro7": {
+    "clean": {
+      "AR1": 0.019,
+      "AR2": 0.9806,
+      "MA1": 0.9722,
+      "σ²": 0.0,
+      "AIC": -39952.3026
+    },
+    "noise": {
+      "AR1": -0.0126,
+      "AR2": 0.0359,
+      "MA1": -0.9839,
+      "σ²": 20.2457,
+      "AIC": 11699.2418
+    }
+  },
+  "v2_arma_agro3": {
+    "clean": {
+      "AR1": 0.8423,
+      "AR2": 0.157,
+      "MA1": -0.5109,
+      "σ²": 0.7022,
+      "AIC": 4984.2565
+    },
+    "noise": {
+      "AR1": 0.9469,
+      "AR2": 0.0515,
+      "MA1": -0.8244,
+      "σ²": 12.9985,
+      "AIC": 10818.8898
+    }
+  },
+  "v2_a7_ar2_clean": 0.9805983844592245,
+  "v2_a7_ar2_noise": 0.035868685127992406,
+  "v2_a7_ma1_noise": -0.9839017376385556,
+  "v2_a3_sigma_clean": 0.7021846561965502,
+  "v2_a3_sigma_noise": 12.998521758278846,
+  "v2_a3_ar1_clean": 0.8423441410672021,
+  "v2_a3_ar1_noise": 0.9469106161269346,
+  "v2_a3_ar1_filtrada": 1.9989796226797294,
+  "v2_a3_sigma_filtrada": 2.279020551939405e-07,
+  "v3_edge_connectivity": 13,
+  "v3_node_connectivity": 13,
+  "v3_grado_minimo": 13,
+  "v3_demo_caida_pct": 41.935483870967715,
+  "v4_tabla": {
+    "Agro_1": {
+      "σ² entre zonas": 0.2907,
+      "σ² intra zona": 110.4075,
+      "η² (%)": 0.2627,
+      "ANOVA p": 0.3758
+    },
+    "Agro_5": {
+      "σ² entre zonas": 0.0005,
+      "σ² intra zona": 0.144,
+      "η² (%)": 0.332,
+      "ANOVA p": 0.2374
+    },
+    "Agro_7": {
+      "σ² entre zonas": 0.4574,
+      "σ² intra zona": 62.9548,
+      "η² (%)": 0.7227,
+      "ANOVA p": 0.0102
+    },
+    "Agro_10": {
+      "σ² entre zonas": 0.0061,
+      "σ² intra zona": 2.314,
+      "η² (%)": 0.2612,
+      "ANOVA p": 0.4748
+    }
+  },
+  "v4_eta2_max": 0.7226616110637489,
+  "v4_bartlett_p": 0.3019567556658284,
+  "v4_cv_varianza_celdas": 0.21397593882439797,
+  "v4_geografia_influye": true
+}
